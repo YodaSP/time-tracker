@@ -1,3 +1,4 @@
+@Library("shared-library") _
 pipeline {
     agent any
 
@@ -6,6 +7,11 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        stage('SharedLib') {
+            steps {
+                helloWorld()
+            }            
+            
         }
     }
 }
