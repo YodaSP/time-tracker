@@ -7,6 +7,7 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        }
         stage('SharedLib') {
             steps {
                 helloWorld()
@@ -14,4 +15,4 @@ pipeline {
             
         }
     }
-}
+
